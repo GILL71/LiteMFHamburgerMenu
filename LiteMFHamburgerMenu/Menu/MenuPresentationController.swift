@@ -54,8 +54,6 @@ class MenuPresentationController: UIPresentationController, UIGestureRecognizerD
     
     //MARK: - Helper
     @objc func handleTap(sender: UITapGestureRecognizer? = nil) {
-        print("handle tap!")
-        presentedViewController.dismiss(animated: true) { [weak self] in
-        }
+        presentedViewController.dismiss(animated: true)
     }
 }

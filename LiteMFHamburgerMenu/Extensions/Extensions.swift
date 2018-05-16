@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  Extensions.swift
 //  LiteMFHamburgerMenu
 //
 //  Created by Michael Nechaev on 16/05/2018.
@@ -8,7 +8,4 @@
 
 import UIKit
 
-class FirstViewController: UISwipableViewController {
 
-
-}

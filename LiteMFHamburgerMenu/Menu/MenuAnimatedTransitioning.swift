@@ -34,33 +34,21 @@ class MenuAnimatedTransitioning: NSObject, UIViewControllerAnimatedTransitioning
         
         let frame = inView.bounds
         
-        var offToLeft = frame
-        offToLeft.origin.x -= 0.4 * frame.size.width
-        offToLeft.size.width *= 0.4
-        
         switch transitionType {
         case .presenting:
-            //toView.frame = offToLeft
             
             toView.frame = CGRect(x: -165, y: 0, width: 165, height: frame.height)
             
-            
             inView.addSubview(toView)
             UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
-                
-                
                 toView.frame = CGRect(x: 0, y: 0, width: 165, height: frame.height)
-                //но fromView мы должны передвинуть на новую позицию
                 fromView.frame = CGRect(x: 165, y: 0, width: frame.width, height: frame.height)
             }, completion: { finished in
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
             })
         case .dismissing:
             UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
-                //                fromView.frame = offToRight
-                //fromView.frame = offToLeft
                 fromView.frame = CGRect(x: -165, y: 0, width: 165, height: frame.height)
-                //
                 toView.frame = CGRect(x: 0, y: 0, width: inView.frame.width, height: inView.frame.height)
             }, completion: { finished in
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled)

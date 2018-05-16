@@ -19,6 +19,8 @@
 		1675110720AC24CB0003BD35 /* MenuTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675110620AC24CB0003BD35 /* MenuTransitioningDelegate.swift */; };
 		1675110920AC24FF0003BD35 /* MenuAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675110820AC24FF0003BD35 /* MenuAnimatedTransitioning.swift */; };
 		1675110B20AC250C0003BD35 /* MenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675110A20AC250C0003BD35 /* MenuPresentationController.swift */; };
+		1675110F20AC37BA0003BD35 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675110E20AC37BA0003BD35 /* Extensions.swift */; };
+		1675111120AC3B3D0003BD35 /* UISwipableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675111020AC3B3D0003BD35 /* UISwipableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		1675110620AC24CB0003BD35 /* MenuTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTransitioningDelegate.swift; sourceTree = "<group>"; };
 		1675110820AC24FF0003BD35 /* MenuAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAnimatedTransitioning.swift; sourceTree = "<group>"; };
 		1675110A20AC250C0003BD35 /* MenuPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresentationController.swift; sourceTree = "<group>"; };
+		1675110E20AC37BA0003BD35 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1675111020AC3B3D0003BD35 /* UISwipableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwipableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				167510E820AC23D30003BD35 /* AppDelegate.swift */,
+				1675110D20AC37A50003BD35 /* Extensions */,
 				167510EC20AC23D30003BD35 /* Main.storyboard */,
 				1675110220AC24930003BD35 /* Container */,
 				1675110320AC249F0003BD35 /* Controllers */,
@@ -84,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				167510FA20AC245D0003BD35 /* ContainerViewController.swift */,
+				1675111020AC3B3D0003BD35 /* UISwipableViewController.swift */,
 			);
 			path = Container;
 			sourceTree = "<group>";
@@ -107,6 +113,14 @@
 				1675110A20AC250C0003BD35 /* MenuPresentationController.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		1675110D20AC37A50003BD35 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1675110E20AC37BA0003BD35 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,11 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1675111120AC3B3D0003BD35 /* UISwipableViewController.swift in Sources */,
 				167510FF20AC24770003BD35 /* SecondViewController.swift in Sources */,
 				1675110520AC24B90003BD35 /* MenuViewController.swift in Sources */,
 				167510FD20AC246D0003BD35 /* FirstViewController.swift in Sources */,
 				1675110920AC24FF0003BD35 /* MenuAnimatedTransitioning.swift in Sources */,
 				1675110120AC247F0003BD35 /* ThirdViewController.swift in Sources */,
+				1675110F20AC37BA0003BD35 /* Extensions.swift in Sources */,
 				1675110B20AC250C0003BD35 /* MenuPresentationController.swift in Sources */,
 				1675110720AC24CB0003BD35 /* MenuTransitioningDelegate.swift in Sources */,
 				167510FB20AC245D0003BD35 /* ContainerViewController.swift in Sources */,
