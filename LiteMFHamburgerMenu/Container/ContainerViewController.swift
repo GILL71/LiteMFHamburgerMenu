@@ -11,9 +11,8 @@ import UIKit
 class ContainerViewController: UIViewController {
 
     var currentViewController: UIViewController?
-    var loadingViewController: UIViewController?
     
-    let initialViewControllerId = "nav2"
+    @IBInspectable var initialId: String? //= "nav2"
     
     deinit {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "reloadVC"), object: nil)
@@ -25,9 +24,13 @@ class ContainerViewController: UIViewController {
                                                selector: #selector(reloadViewController),
                                                name: Notification.Name("reloadVC"),
                                                object: nil)
-        let vc = self.loadViewController(with: initialViewControllerId)
-        self.add(asChildViewController: vc)
-        self.currentViewController = vc
+        if let id = self.initialId {
+            let vc = self.loadViewController(with: id)
+            self.add(asChildViewController: vc)
+            self.currentViewController = vc
+        } else {
+            print("Error: set 'initialId' property in your ContainerViewController in .storyboard")
+        }
     }
     
     @objc func reloadViewController(_ notification: Notification) {
@@ -63,8 +66,10 @@ class ContainerViewController: UIViewController {
     }
 
     private func loadViewController(with storyboardId: String) -> UIViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let vc = storyboard.instantiateViewController(withIdentifier: storyboardId)
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: storyboardId) else {
+            print("Error: no view controllers with storyboard id '\(storyboardId)'")
+            return self
+        }
         return vc
     }
 }

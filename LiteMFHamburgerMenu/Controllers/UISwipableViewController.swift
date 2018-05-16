@@ -10,6 +10,7 @@ import UIKit
 
 class UISwipableViewController: UIViewController {
     var interactionController: UIPercentDrivenInteractiveTransition?
+    @IBInspectable var menuId: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,7 @@ class UISwipableViewController: UIViewController {
         let percent   = translate.x / gesture.view!.bounds.size.width
         
         if gesture.state == .began {
-            let controller = storyboard!.instantiateViewController(withIdentifier: "menu") as! MenuViewController
+            let controller = storyboard!.instantiateViewController(withIdentifier: "menu_id") as! UIMenuViewController
             interactionController = UIPercentDrivenInteractiveTransition()
             controller.delegate.interactionController = interactionController
             
