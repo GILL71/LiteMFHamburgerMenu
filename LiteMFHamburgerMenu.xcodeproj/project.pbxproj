@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		167510E920AC23D30003BD35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167510E820AC23D30003BD35 /* AppDelegate.swift */; };
-		167510EB20AC23D30003BD35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167510EA20AC23D30003BD35 /* ViewController.swift */; };
 		167510EE20AC23D30003BD35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167510EC20AC23D30003BD35 /* Main.storyboard */; };
 		167510F020AC23D40003BD35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167510EF20AC23D40003BD35 /* Assets.xcassets */; };
 		167510F320AC23D40003BD35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167510F120AC23D40003BD35 /* LaunchScreen.storyboard */; };
+		167510FB20AC245D0003BD35 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167510FA20AC245D0003BD35 /* ContainerViewController.swift */; };
+		167510FD20AC246D0003BD35 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167510FC20AC246D0003BD35 /* FirstViewController.swift */; };
+		167510FF20AC24770003BD35 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167510FE20AC24770003BD35 /* SecondViewController.swift */; };
+		1675110120AC247F0003BD35 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675110020AC247F0003BD35 /* ThirdViewController.swift */; };
+		1675110520AC24B90003BD35 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675110420AC24B90003BD35 /* MenuViewController.swift */; };
+		1675110720AC24CB0003BD35 /* MenuTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675110620AC24CB0003BD35 /* MenuTransitioningDelegate.swift */; };
+		1675110920AC24FF0003BD35 /* MenuAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675110820AC24FF0003BD35 /* MenuAnimatedTransitioning.swift */; };
+		1675110B20AC250C0003BD35 /* MenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675110A20AC250C0003BD35 /* MenuPresentationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		167510E520AC23D30003BD35 /* LiteMFHamburgerMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiteMFHamburgerMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167510E820AC23D30003BD35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		167510EA20AC23D30003BD35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		167510ED20AC23D30003BD35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		167510EF20AC23D40003BD35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		167510F220AC23D40003BD35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		167510F420AC23D40003BD35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		167510FA20AC245D0003BD35 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		167510FC20AC246D0003BD35 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		167510FE20AC24770003BD35 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		1675110020AC247F0003BD35 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		1675110420AC24B90003BD35 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1675110620AC24CB0003BD35 /* MenuTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTransitioningDelegate.swift; sourceTree = "<group>"; };
+		1675110820AC24FF0003BD35 /* MenuAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		1675110A20AC250C0003BD35 /* MenuPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +69,44 @@
 			isa = PBXGroup;
 			children = (
 				167510E820AC23D30003BD35 /* AppDelegate.swift */,
-				167510EA20AC23D30003BD35 /* ViewController.swift */,
 				167510EC20AC23D30003BD35 /* Main.storyboard */,
+				1675110220AC24930003BD35 /* Container */,
+				1675110320AC249F0003BD35 /* Controllers */,
+				1675110C20AC25560003BD35 /* Menu */,
 				167510EF20AC23D40003BD35 /* Assets.xcassets */,
 				167510F120AC23D40003BD35 /* LaunchScreen.storyboard */,
 				167510F420AC23D40003BD35 /* Info.plist */,
 			);
 			path = LiteMFHamburgerMenu;
+			sourceTree = "<group>";
+		};
+		1675110220AC24930003BD35 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				167510FA20AC245D0003BD35 /* ContainerViewController.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		1675110320AC249F0003BD35 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				167510FC20AC246D0003BD35 /* FirstViewController.swift */,
+				167510FE20AC24770003BD35 /* SecondViewController.swift */,
+				1675110020AC247F0003BD35 /* ThirdViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1675110C20AC25560003BD35 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				1675110420AC24B90003BD35 /* MenuViewController.swift */,
+				1675110620AC24CB0003BD35 /* MenuTransitioningDelegate.swift */,
+				1675110820AC24FF0003BD35 /* MenuAnimatedTransitioning.swift */,
+				1675110A20AC250C0003BD35 /* MenuPresentationController.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				167510EB20AC23D30003BD35 /* ViewController.swift in Sources */,
+				167510FF20AC24770003BD35 /* SecondViewController.swift in Sources */,
+				1675110520AC24B90003BD35 /* MenuViewController.swift in Sources */,
+				167510FD20AC246D0003BD35 /* FirstViewController.swift in Sources */,
+				1675110920AC24FF0003BD35 /* MenuAnimatedTransitioning.swift in Sources */,
+				1675110120AC247F0003BD35 /* ThirdViewController.swift in Sources */,
+				1675110B20AC250C0003BD35 /* MenuPresentationController.swift in Sources */,
+				1675110720AC24CB0003BD35 /* MenuTransitioningDelegate.swift in Sources */,
+				167510FB20AC245D0003BD35 /* ContainerViewController.swift in Sources */,
 				167510E920AC23D30003BD35 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
